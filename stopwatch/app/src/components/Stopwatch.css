@@ -1,0 +1,74 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 6%, 90%);
+}
+
+.stopwatch-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.display-container{
+    border: 5px solid #000;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.5rem;
+    gap: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: rgb(74, 71, 71);
+    margin: 2rem 2.5rem;
+}
+
+button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 550;
+    border: 3px solid #000;
+    border-radius: 50px;
+    margin: 0 1.5rem;
+    cursor: pointer;
+    min-width: 120px;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.start-btn{
+    background-color: green;
+}
+
+.start-btn:hover{
+    background-color: hsl(120, 100%, 50%);
+}
+
+.stop-btn{
+    background-color: rgb(167, 7, 7);
+}
+
+.stop-btn:hover{
+    background-color: hsl(0, 100%, 56%);
+}
+
+.reset-btn{
+    background-color: rgb(6, 22, 197);
+}
+
+.reset-btn:hover{
+    background-color: hsl(205, 100%, 50%);
+}
+
