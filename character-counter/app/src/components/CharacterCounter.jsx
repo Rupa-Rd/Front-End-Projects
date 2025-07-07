@@ -9,10 +9,7 @@ function CharacterCounter() {
   };
 
   const characterCount = text.length;
-
-  const wordCount = text.trim() === ""
-    ? 0
-    : text.trim().split(/\s+/).length;
+  const characterCountWithoutSpaces = text.replace(/\s/g, "").length;
 
   return (
     <div className="container">
@@ -29,9 +26,9 @@ function CharacterCounter() {
           <span id="characterCount">{characterCount} </span>
           <span>Characters</span>
         </div>
-        <div className="word-count">
-          <span id="wordCount">{wordCount} </span>
-          <span>Words</span>
+        <div className="character-count-without-spaces">
+          <span id="characterCount">{characterCountWithoutSpaces} </span>
+          <span>Characters (Excluding Spaces)</span>
         </div>
       </div>
     </div>
