@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CharacterCounter from "./components/CharacterCounter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="header">
+        <h1 className="title">Character Counter App</h1>
+      </div>
+      <CharacterCounter />
+      <a href="https://www.guvi.in/" className="copywright">
+        Made by Guvi💚
+      </a>
     </div>
   );
 }
