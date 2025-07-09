@@ -1,9 +1,13 @@
-import './App.css';
-import QrGenerator from './components/QrGenerator';
+import "./App.css";
+import QrGenerator from "./components/QrGenerator";
 function App() {
   return (
-    <div>
+    <div className="App">
+      <h1>QR Code Generator</h1>
       <QrGenerator />
+      <a href="https://www.guvi.in/" className="copywright">
+        Made by Guvi💚
+      </a>
     </div>
   );
 }
